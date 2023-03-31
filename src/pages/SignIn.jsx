@@ -1,9 +1,10 @@
-import { useState } from "react";
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
 import OAuth from "../components/OAuth";
-import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 import { toast } from "react-toastify";
+import { useState } from "react";
 
 export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -41,7 +42,7 @@ export default function SignIn() {
       <div className="flex justify-center flex-wrap items-center px-6 py-12 max-w-6xl mx-auto">
         <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
           <img
-            src="https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1373&q=80"
+            src="https://www.investopedia.com/thmb/JI2N-vcZhwfPKic-WpAoT8VwYiU=/4200x2797/filters:no_upscale():max_bytes(150000):strip_icc()/mortgage-real-estate-investing-guide-4222543-v1-b49c49405ee14779adb25d2879411414.png"
             alt="key"
             className="w-full rounded-2xl"
           />
